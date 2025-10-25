@@ -250,11 +250,6 @@ Métricas principais:
 - Redes sociais em azul
 - Informações de contato organizadas
 
-#### Chat Widget
-- "Talk with Us" fixo no canto inferior direito
-- Ícone de fone verde
-- Integração com WhatsApp
-
 ### Padrões de Design
 - Cards com sombra suave e border-radius
 - Espaçamento generoso entre seções
@@ -530,9 +525,9 @@ mvp-plataforma/
 
 ### Como Contribuir
 1. Fork o projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
+2. Crie uma branch para sua feature (`git checkout -b feature/minha versão`)
+3. Commit suas mudanças (`git commit -m 'Add some minha versão'`)
+4. Push para a branch (`git push origin feature/minha versão`)
 5. Abra um Pull Request
 
 ### Padrões de Código
@@ -560,18 +555,11 @@ mvp-plataforma/
 - **Instagram**: [@todacor_educacao](https://instagram.com/todacor_educacao)
 - **LinkedIn**: [Toda Cor Educação](https://linkedin.com/company/todacor-educacao)
 
-### Suporte Técnico
-- **Email**: suporte@todacor.com.br
-- **WhatsApp**: (85) 99999-9999
-- **Chat**: Widget "Talk with Us" no site
-
 ---
 
 <div align="center">
 
 **Transformando a Educação nas Prefeituras do Ceará** 🎨
-
-*Desenvolvido com ❤️ pela equipe Toda Cor*
 
 [![Powered by Vercel](https://img.shields.io/badge/Powered%20by-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/)
 
