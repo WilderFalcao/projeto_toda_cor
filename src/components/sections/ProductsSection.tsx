@@ -280,7 +280,7 @@ const ProductsSection = () => {
                   <Button 
                     variant="whatsapp" 
                     className="w-full"
-                    onClick={() => window.open(`https://wa.me/5585987122328?text=Olá! Gostaria de saber mais sobre ${product.title}`, '_blank')}
+                    onClick={() => window.open(`https://wa.me/5585996709412?text=Olá! Gostaria de saber mais sobre ${product.title}`, '_blank')}
                   >
                     <MessageCircle className="h-4 w-4 mr-2" />
                     Consultar via WhatsApp
@@ -289,7 +289,7 @@ const ProductsSection = () => {
                     variant="outline" 
                     size="sm" 
                     className="w-full"
-                    onClick={() => window.open(`https://wa.me/5585987122328?text=Olá! Gostaria de agendar uma demonstração do ${product.title}`, '_blank')}
+                    onClick={() => window.open(`https://wa.me/5585996709412?text=Olá! Gostaria de agendar uma demonstração do ${product.title}`, '_blank')}
                   >
                     <MessageCircle className="h-4 w-4 mr-2" />
                     Agendar Demonstração
@@ -315,7 +315,7 @@ const ProductsSection = () => {
               variant="secondary" 
               size="lg" 
               className="bg-white text-primary-600 hover:bg-gray-50"
-              onClick={() => window.open('https://wa.me/5585987122328?text=Olá! Gostaria de falar com um especialista sobre soluções educacionais', '_blank')}
+              onClick={() => window.open('https://wa.me/5585996709412?text=Olá! Gostaria de falar com um especialista sobre soluções educacionais', '_blank')}
             >
               <MessageCircle className="h-5 w-5 mr-2" />
               Falar com Especialista
