@@ -45,12 +45,13 @@ const Footer = () => {
       { name: 'Consultoria Educacional', href: '#servicos' }
     ],
     suporte: [
-      { name: 'WhatsApp', href: 'https://wa.me/5585987122328' },
+      { name: 'WhatsApp', href: 'https://wa.me/5585996709412' },
       { name: 'Contato', href: '#contato' },
       { name: 'Sobre Nós', href: '#sobre' },
       { name: 'Produtos', href: '#produtos' }
     ]
   }
+  
 
   const socialLinks = [
     { 

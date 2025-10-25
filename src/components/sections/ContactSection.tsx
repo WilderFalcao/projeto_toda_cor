@@ -272,7 +272,7 @@ const ContactSection = () => {
                 <Button 
                   variant="secondary" 
                   className="bg-white text-whatsapp-600 hover:bg-gray-50"
-                  onClick={() => window.open('https://wa.me/5585987122328?text=Olá! Gostaria de agendar uma demonstração das soluções educacionais da Toda Cor', '_blank')}
+                  onClick={() => window.open('https://wa.me/5585996709412?text=Olá! Gostaria de agendar uma demonstração das soluções educacionais da Toda Cor', '_blank')}
                 >
                   <MessageCircle className="mr-2 h-5 w-5" />
                   Abrir WhatsApp

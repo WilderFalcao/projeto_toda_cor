@@ -70,7 +70,7 @@ const PrivacyPolicy = () => {
                   <strong>E-mail:</strong> contato@todacor.com.br
                 </p>
                 <p>
-                  <strong>Telefone:</strong> (85) 98712-2328
+                  <strong>Telefone:</strong> (85) 99670-9412
                 </p>
                 <p>
                   <strong>Encarregado de Dados (DPO):</strong> [Nome do DPO]
@@ -313,7 +313,7 @@ const PrivacyPolicy = () => {
                 </p>
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <p><strong>E-mail:</strong> dpo@todacor.com.br</p>
-                  <p><strong>Telefone:</strong> (85) 98712-2328</p>
+                  <p><strong>Telefone:</strong> (85) 99670-9412</p>
                   <p><strong>Endereço:</strong> [Endereço completo da empresa]</p>
                   <p><strong>Horário de atendimento:</strong> Segunda a sexta, das 8h às 18h</p>
                 </div>
