@@ -179,41 +179,96 @@ export function usePedidos() {
 }
 
 // Hook para autenticação administrativa
+// Hook para autenticação administrativa
 export function useAuth() {
   const [user, setUser] = useState<UsuarioAdmin | null>(null)
   const [loading, setLoading] = useState(true)
 
   const login = async (email: string, password: string) => {
     try {
-      // Verificar credenciais específicas
-      if (email === 'admin@todacor.com.br' && password === 'adm@123') {
-        const { data, error } = await supabase
-          .from('usuarios_admin')
-          .select('*')
-          .eq('email', email)
-          .eq('ativo', true)
-          .single()
+      console.log('=== TENTANDO LOGIN ===')
+      console.log('Email:', email)
+      console.log('Password length:', password.length)
+      
+      // 1. Fazer login com Supabase Auth
+      const { data: authData, error: authError } = await supabase.auth.signInWithPassword({
+        email,
+        password
+      })
 
-        if (error) throw error
-        
-        if (data) {
-          setUser(data)
-          return data
-        }
+      console.log('Auth Data:', authData)
+      console.log('Auth Error:', authError)
+
+      if (authError) {
+        console.error('Erro de autenticação:', authError)
+        throw authError
       }
-      throw new Error('Credenciais inválidas')
+
+      // 2. Buscar dados do admin na tabela usuarios_admin
+      const { data: adminData, error: adminError } = await supabase
+        .from('usuarios_admin')
+        .select('*')
+        .eq('email', email)
+        .eq('ativo', true)
+        .single()
+
+      console.log('Admin Data:', adminData)
+      console.log('Admin Error:', adminError)
+
+      if (adminError) {
+        console.error('Erro ao buscar admin:', adminError)
+        throw adminError
+      }
+      
+      setUser(adminData)
+      console.log('Login bem-sucedido!')
+      return adminData
     } catch (err) {
-      throw err
+      console.error('Erro capturado no catch:', err)
+      throw new Error('Email ou senha inválidos')
     }
   }
 
-  const logout = () => {
+  const logout = async () => {
+    await supabase.auth.signOut()
     setUser(null)
   }
 
   useEffect(() => {
-    // Verificar se há usuário logado (em produção, usar Supabase Auth)
-    setLoading(false)
+    // Verificar sessão existente
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (session?.user?.email) {
+        supabase
+          .from('usuarios_admin')
+          .select('*')
+          .eq('email', session.user.email)
+          .eq('ativo', true)
+          .single()
+          .then(({ data }) => {
+            if (data) setUser(data)
+          })
+      }
+      setLoading(false)
+    })
+
+    // Escutar mudanças na autenticação
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (session?.user?.email) {
+        supabase
+          .from('usuarios_admin')
+          .select('*')
+          .eq('email', session.user.email)
+          .eq('ativo', true)
+          .single()
+          .then(({ data }) => {
+            if (data) setUser(data)
+          })
+      } else {
+        setUser(null)
+      }
+    })
+
+    return () => subscription.unsubscribe()
   }, [])
 
   return {
