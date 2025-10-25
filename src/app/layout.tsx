@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Toda Cor - Transformando a Educação nas Prefeituras do Ceará',
-  description: 'Fornecemos materiais educacionais de qualidade e bibliotecas completas para fortalecer a educação pública municipal. Soluções especializadas para o desenvolvimento educacional do seu município.',
+  description:
+    'Fornecemos materiais educacionais de qualidade e bibliotecas completas para fortalecer a educação pública municipal. Soluções especializadas para o desenvolvimento educacional do seu município.',
   keywords: [
     'educação',
     'prefeituras',
@@ -15,7 +17,7 @@ export const metadata: Metadata = {
     'robótica',
     'materiais didáticos',
     'Ceará',
-    'municipal'
+    'municipal',
   ],
   authors: [{ name: 'Toda Cor' }],
   creator: 'Toda Cor',
@@ -31,7 +33,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Toda Cor - Transformando a Educação nas Prefeituras do Ceará',
-    description: 'Fornecemos materiais educacionais de qualidade e bibliotecas completas para fortalecer a educação pública municipal.',
+    description:
+      'Fornecemos materiais educacionais de qualidade e bibliotecas completas para fortalecer a educação pública municipal.',
     url: '/',
     siteName: 'Toda Cor',
     images: [
@@ -48,7 +51,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Toda Cor - Transformando a Educação nas Prefeituras do Ceará',
-    description: 'Fornecemos materiais educacionais de qualidade e bibliotecas completas para fortalecer a educação pública municipal.',
+    description:
+      'Fornecemos materiais educacionais de qualidade e bibliotecas completas para fortalecer a educação pública municipal.',
     images: ['/images/og-image.jpg'],
   },
   robots: {
@@ -85,6 +89,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   )
