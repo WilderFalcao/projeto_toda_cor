@@ -20,7 +20,7 @@ const Footer = () => {
       const element = document.querySelector(href)
       if (element) {
         const headerHeight = 64
-        const elementPosition = element.offsetTop - headerHeight
+        const elementPosition = (element as HTMLElement).offsetTop - headerHeight
         window.scrollTo({
           top: elementPosition,
           behavior: 'smooth'
