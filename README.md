@@ -544,7 +544,7 @@ mvp-plataforma/
 ## Contato
 
 ### Toda Cor
-- **Website**: [https://todacor.vercel.app/](https://https://todacor.vercel.app/)
+- **Website**: [www.todacor.vercel.app/](https://todacor.vercel.app/)
 - **Email**: contato@todacor.com.br
 - **Telefone**: (85) 3000-0000
 - **Endereço**: Fortaleza, Ceará, Brasil
