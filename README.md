@@ -1,4 +1,4 @@
-# 🎨 Toda Cor - MVP Plataforma Educacional
+# Toda Cor - MVP Plataforma Educacional
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
@@ -8,7 +8,7 @@
 
 > **Transformando a Educação nas Prefeituras do Ceará** através de materiais educacionais de qualidade e soluções especializadas para o desenvolvimento educacional municipal.
 
-## 📋 Índice
+## Índice
 
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Objetivos do MVP](#-objetivos-do-mvp)
@@ -25,7 +25,7 @@
 - [Contribuição](#-contribuição)
 - [Contato](#-contato)
 
-## 🎯 Sobre o Projeto
+## Sobre o Projeto
 
 ### Problema Principal
 As prefeituras enfrentam dificuldades significativas para adquirir materiais educacionais tecnológicos e de robótica, incluindo:
@@ -37,11 +37,11 @@ As prefeituras enfrentam dificuldades significativas para adquirir materiais edu
 ### Proposta de Valor
 A **Toda Cor** oferece uma solução completa que vai além de produtos:
 
-- **📚 Produtos Especializados**: Kits educacionais pré-definidos e testados
-- **🛠️ Implementação Completa**: Suporte técnico e logístico
-- **👨‍🏫 Assessoria Pedagógica**: Acompanhamento especializado nos projetos
-- **🎓 Formação Continuada**: Treinamento para professores e coordenadores
-- **📊 Cases de Sucesso**: Comprovação de resultados em outras prefeituras
+- **Produtos Especializados**: Kits educacionais pré-definidos e testados
+- **Implementação Completa**: Suporte técnico e logístico
+- **Assessoria Pedagógica**: Acompanhamento especializado nos projetos
+- **Formação Continuada**: Treinamento para professores e coordenadores
+- **Cases de Sucesso**: Comprovação de resultados em outras prefeituras
 
 ### Diferenciais Competitivos
 1. **Soluções Integradas**: Não vendemos apenas produtos, oferecemos serviços completos
@@ -49,7 +49,7 @@ A **Toda Cor** oferece uma solução completa que vai além de produtos:
 3. **Suporte Pedagógico**: Acompanhamento contínuo na implementação
 4. **Formação de Educadores**: Capacitação para sustentabilidade dos projetos
 
-## 🎯 Objetivos do MVP
+## Objetivos do MVP
 
 ### Meta Principal
 **Gerar leads qualificados** através de pedidos de agendamento de demonstração
@@ -64,7 +64,7 @@ A **Toda Cor** oferece uma solução completa que vai além de produtos:
 - **Primário**: Coordenadores Pedagógicos e Professores
 - **Secundário**: Secretários de Educação e Prefeitos
 
-## 🚀 Funcionalidades Principais
+## Funcionalidades Principais
 
 ### 4.1. Landing Page (Pública)
 
@@ -164,7 +164,7 @@ Métricas principais:
 - **Contato**: Formulário + informações (endereço, telefone, email, horário)
 - **Login**: Acesso ao painel administrativo
 
-## 🏗️ Arquitetura Técnica
+## Arquitetura Técnica
 
 ### Stack Principal
 - **Frontend**: Next.js 14 + React 18 + TypeScript
@@ -194,7 +194,7 @@ Métricas principais:
 }
 ```
 
-## 🎨 Design e Interface
+## Design e Interface
 
 ### Identidade Visual
 
@@ -258,7 +258,7 @@ Métricas principais:
 - Layout em grid (3 colunas para produtos/serviços)
 - Responsivo mobile-first
 
-## 🗄️ Modelo de Dados
+## Modelo de Dados
 
 ### Principais Entidades
 
@@ -313,7 +313,7 @@ CREATE TABLE usuarios_admin (
 );
 ```
 
-## 👥 Personas e Stakeholders
+## Personas e Stakeholders
 
 ### Persona Principal: Coordenador Pedagógico
 - **Perfil**: Responsável pela implementação de projetos educacionais
@@ -330,7 +330,7 @@ CREATE TABLE usuarios_admin (
 - **Secretários de Educação**: Aprovadores de orçamento
 - **Prefeitos**: Tomadores de decisão final
 
-## 🔄 Fluxo de Conversão
+## Fluxo de Conversão
 
 ### Jornada do Usuário
 1. **Descoberta**: Acesso via busca ou indicação
@@ -348,7 +348,7 @@ CREATE TABLE usuarios_admin (
 - Chat widget
 - Links WhatsApp
 
-## ⚡ Requisitos Não-Funcionais
+## Requisitos Não-Funcionais
 
 ### Segurança
 - **LGPD Compliance**: Conformidade total com a Lei Geral de Proteção de Dados
@@ -373,7 +373,7 @@ CREATE TABLE usuarios_admin (
 - **Monitoramento**: Alertas automáticos de problemas
 - **Recuperação**: Plano de recuperação de desastres
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 ### Pré-requisitos
 - Node.js 18+ 
@@ -462,7 +462,7 @@ npm run test
 - Railway
 - DigitalOcean App Platform
 
-## 📁 Estrutura de Pastas
+## Estrutura de Pastas
 
 ```
 mvp-plataforma/
@@ -501,7 +501,7 @@ mvp-plataforma/
 └── package.json
 ```
 
-## 🗺️ Roadmap Futuro
+## Roadmap Futuro
 
 ### Fase 2 (Pós-MVP)
 - **Área de Login para Gestores**: Acompanhamento do status do pedido
@@ -521,7 +521,7 @@ mvp-plataforma/
 - Integração com redes sociais
 - Sistema de chat em tempo real
 
-## 🤝 Contribuição
+## Contribuição
 
 ### Como Contribuir
 1. Fork o projeto
@@ -541,7 +541,7 @@ mvp-plataforma/
 - Adicione labels apropriadas
 - Referencie issues em commits
 
-## 📞 Contato
+## Contato
 
 ### Toda Cor
 - **Website**: [www.todacor.com.br](https://www.todacor.com.br)
